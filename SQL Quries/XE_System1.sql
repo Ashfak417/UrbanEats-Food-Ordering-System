@@ -1,0 +1,6 @@
+CREATE USER urbaneatsadmin IDENTIFIED BY urban123
+
+GRANT CREATE SESSION TO urbaneatsadmin;
+GRANT RESOURCE, CONNECT TO urbaneatsadmin;
+
+ALTER USER urbaneatsadmin QUOTA UNLIMITED ON USERS;
